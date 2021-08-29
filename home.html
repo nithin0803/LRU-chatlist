@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <title>CHAT LIST</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="main.js" type="module"></script>
+</head>
+<body>
+    <nav id="navbar" style="font-size: 25px">
+        <P>WhatsApp Chat-list LRU Project</p>
+    </nav>
+    <div class="container1" >
+        <div class="container1a">
+            <div class="chatbox">
+                <div class="box_disscusion">
+                    <div class="box_header">
+                        <img src="./html images/IMG_20210528_142535.jpg" width="100%" height="80px" >
+                    </div>
+                    <div class="ks-body ks-scrollable jspScrollable" data-auto-height="" style="height: 400px; overflow-y: auto; padding: 0px; width: 339px;" tabindex="0">
+
+                        <div class="jspContainer">
+                            <div class="jspPane" style="padding: 0px; top: 0px; width: 339px;">
+                                <ul class="ks-items" id="chat-list" style="list-style-type: none; padding:0px" >
+
+                                </ul>
+                            </div>
+                            <div class="jspVerticalBar">
+                                <div class="jspCap jspCapTop"></div>
+                                <div class="jspTrack" style="height: 100px;">
+                                    <div class="jspDrag">
+                                        <div class="jspDragTop"></div>
+                                        <div class="jspDragBottom"></div>
+                                    </div>
+                                </div>
+                                <div class="jspCap jspCapBottom"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container1a" style="overflow-y: scroll; height: 500px; padding-top: 40px">
+            <span id="temptext" style="height: 100%; width: 100%; text-align: center; font-size: x-large; font-family:cursive">
+                Scroll down and Click on generate new step !!
+            </span>
+        </div>
+    </div>
+    <div class="container2">
+        <br>
+        <button type="button" class="btn btn-danger" id="generate-step" style="margin: auto">Generate new step</button>
+    </div>
+
+    <template>
+        <li class="ks-item" id="ChatListItem">
+            <a href="#">
+            <span class="ks-avatar">
+                <img src="./images/avathar1.png" width="36" height="36" id="Image"> </img>
+            </span>
+                <div class="ks-body">
+                    <div class="ks-name">
+                        <span id="Name">Eric George</span>
+                        <span id="Time" class="ks-datetime">just now</span>
+                    </div>
+                    <div class="ks-message" id="Message">Why didn't he come and talk to me himse...</div>
+                </div>
+            </a>
+        </li>
+    </template>
+    
+</body>
+</html>
